@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронювання місця в кафе</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="booking-box">
+            <h2>Забронювати місце</h2>
+            <form id="reserveForm" action="save_booking.php" method="post">
+                <div class="input-box">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Ім'я</label>
+                </div>
+
+                <div class="input-box">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                </div>
+
+                <div class="input-box">
+                    <input type="date" id="date" name="date" required>
+                    <label for="date">Дата</label>
+                </div>
+
+                <div class="input-box">
+                    <input type="time" id="time" name="time" required>
+                    <label for="time">Час</label>
+                </div>
+
+                <div class="input-box">
+                    <input type="number" id="guests" name="guests" min="1" max="20" required>
+                    <label for="guests">Кількість гостей</label>
+                </div>
+
+                <button type="submit">Забронювати</button>
+            </form>
+            <div id="confirmation">
+                <p id="confirmationMessage"></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('reserveForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            
+            fetch('save_booking.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const date = document.getElementById('date').value;
+                    const time = document.getElementById('time').value;
+                    const guests = document.getElementById('guests').value;
+
+                    const confirmationMessage = `
+                        Дякуємо, ${name}! Ваше бронювання підтверджено.
+                        Ми чекаємо вас ${date} о ${time}.
+                        Кількість гостей: ${guests}.
+                        Підтвердження надіслано на: ${email}.
+                    `;
+
+                    document.getElementById('confirmationMessage').textContent = confirmationMessage;
+                    document.getElementById('confirmation').style.display = 'block';
+                } else {
+                    document.getElementById('confirmationMessage').textContent = 'Сталася помилка, спробуйте ще раз.';
+                    document.getElementById('confirmation').style.display = 'block';
+                }
+            })
+            .catch(error => {
+                document.getElementById('confirmationMessage').textContent = 'Сталася помилка, спробуйте ще раз.';
+                document.getElementById('confirmation').style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>

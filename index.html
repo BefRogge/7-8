@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кав'ярня</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto:400,700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="bgimg">
+    <div class="overlay">
+        <h1>Вітаємо в нашій уютній кав'ярні</h1>
+        <div class="tag">Відкриття о 6</div>
+        <div class="location"> закриття в 22</div>
+    </div>
+</header>
+
+<nav class="navbar">
+    <a href="#about">Про нас</a>
+    <a href="#menu">Меню</a>
+    <a href="#contact">Контакти</a>
+    <a href="bron.html"> Бронювання  </a>
+</nav>
+
+<section id="about" class="container">
+    <h2>Про нас</h2>
+    <p>Ласкаво просимо до нашої кав'ярні! Ми - команда ентузіастів, яка створила цей особливий заклад, де кожен гість відчуває себе як удома. Наша місія - робити кожен ваш візит до нас незабутнім і приємним.
+
+        Ми віримо в силу справжньої якості, тому кожна чашка кави, яку ви п'єте у нас, виготовлена з великою увагою та любов'ю. Наші бариста майстерно володіють мистецтвом кавоваріння та завжди раді порадити вам ідеальний напій, який підкреслить ваш настрій та смак.
+        
+        У нас ви зможете насолодитися не лише кавою високої якості, але і смачними десертами, свіжими сендвічами та іншими ласощами, які ми готуємо щодня з великою любов'ю до деталей.
+        
+        Наша кав'ярня - це не лише місце для відпочинку, а й простір для зустрічей, творчості та відпочинку. Ми завжди раді бачити вас тут і намагаємося зробити ваше перебування максимально приємним.
+        
+        Приходьте до нас, і ми з радістю зробимо все можливе, щоб ваш візит став особливим та незабутнім!</p>
+</section>
+
+<section id="menu" class="container">
+    <h2>Меню</h2>
+    <div class="menu-tab">
+        <button class="tab-button active" data-target="coffee">Кавові напої</button>
+        <button class="tab-button" data-target="desserts">Десерти</button>
+        <button class="tab-button" data-target="wine">Вино</button>
+        <button class="tab-button" data-target="seasonal-drinks">Сезонні напої</button>
+    </div>
+    <div class="menu-content" id="coffee">
+        <div class="menu-item">
+            <img src="img/Amerikano.jpg" alt="американо">
+            <h3>Америикано </h3>
+            <p>Ціна: 26 грн</p>
+        </div>
+        <div class="menu-item">
+            <img src="img/ecspresso.jpg" alt="Еспресо">
+            <h3>Еспресо</h3>
+            <p>Ціна: 26 грн</p>
+        </div>
+        <div class="menu-item">
+            <img src="img/latte.jpg" alt="Латте">
+            <h3>Латте</h3>
+            <p>Ціна: 30/35 грн</p>
+        </div>
+        <div class="menu-item">
+            <img src="img/flat.jpg" alt="Флет вайт">
+            <h3>Флет вайт</h3>
+            <p>Ціна: 45 грн</p>
+        </div>
+        <div class="menu-item">
+            <img src="img/raf.jpg" alt="Раф кава">
+            <h3>Раф</h3>
+            <p>Ціна: 55 грн</p>
+        </div>
+        <div class="menu-item">
+            <img src="img/dop.jpg" alt="Допіо">
+            <h3>Допіо</h3>
+            <p>Ціна: 40 грн</p>
+        </div>
+    </div>
+    <div class="menu-content" id="desserts" style="display: none;">
+        <div class="menu-item">
+            <img src="img/555.png" alt="мафін ">
+            <h3>Мафін </h3>
+            <h8>Шоколад</h8>
+            <p>Ціна: 30 грн</p>
+        </div>
+        <div class="menu-item">
+            <img src="img/cherry.png" alt="мафін ">
+            <h3>Мафін </h3>
+            <h8>Вишня</h8>
+            <p>Ціна: 32 грн</p>
+        </div>
+        <div class="menu-item">
+            <img src="img/444.png" alt="мафін ">
+            <h3>Мафін </h3>
+            <h8>З горіхом </h8>
+            <p>Ціна: 32 грн</p>
+        </div>
+        <div class="menu-item">
+            <img src="img/666.png" alt="мафін ">
+            <h3>Мафін </h3>
+            <h8>Шоколад-Банан</h8>
+            <p>Ціна: 30 грн</p>
+        </div>
+        <div class="menu-item">
+            <img src="img/7777.png" alt="Макарун  ">
+            <h3>Макаруни  </h3>
+            <h8>Набір з 5 штук</h8>
+            <p>Ціна: 220 грн</p>
+        </div>
+        <div class="menu-item">
+            <img src="img/8888.png" alt="Макарун  ">
+            <h3>Макаруни  </h3>
+            <h8>Набір з 30 штук</h8>
+            <p>Ціна: 1000 грн</p>
+        </div>
+      
+        </div>
+    </div>
+    <div class="menu-content" id="wine" style="display: none;">
+        <div class="menu-item">
+            <img src="img/000.png" alt="Вино  ">
+            <h3>Chevalier de France Rouge Moelleux Червоне Напівсолодке   </h3>
+            <h8>0.75 л</h8>
+            <p>Ціна: 129 грн</p>
+        </div>
+        <div class="menu-item">
+            <img src="img/000.png" alt="Вино  ">
+            <h3>Baron Montalto Passivento Terre Siciliane IGP Червоне Напівсухе  </h3>
+            <h8>0.75 л</h8>
+            <p>Ціна: 300 грн</p>
+        </div>
+        <div class="menu-item">
+            <img src="img/qqq.png" alt="Вино  ">
+            <h3>Umano Khvanchkara Червоне Напівсолодке </h3>
+            <h8>0.75 л</h8>
+            <p>Ціна: 599 грн</p>
+        </div>
+    </div>
+    <div class="menu-content" id="seasonal-drinks" style="display: none;">
+        <div class="menu-item">
+            <img src="img/ice.jpg" alt="Сезонні напої ">
+            <h3>Айс латте</h3>
+           
+            <p>Ціна: 50 грн</p>
+        </div>
+        <div class="menu-item">
+            <img src="img/moloko.jpg" alt="Сезонні напої  ">
+            <h3>Молочний коктель </h3>
+         
+            <p>Ціна: 50 грн</p>
+        </div>
+        <div class="menu-item">
+            <img src="img/tonik.jpg" alt="Сезонні напої ">
+            <h3>Еспресо тонік </h3>
+        
+            <p>Ціна: 60 грн</p>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="contact" class="container">
+    <h2>Контакти</h2>
+    <p>Телефон: +38(096)-09-60-147</p>
+    <p>Email: info@coffeeboutique.ua</p>
+</section>
+
+<div class="container1">
+    <ul class="example-2">
+        <li class="icon-content">
+          <a
+            href="https://www.spotify.com/"
+            aria-label="Spotify"
+            data-social="spotify"
+          >
+            <div class="filled"></div>
+            <svg version="1.1" viewBox="0 0 100 100">
+              <path
+                d="M50,4C24.7,4,4,24.7,4,50s20.6,46,46,46s46-20.6,46-46S75.4,4,50,4z M71.6,71.5c0,0,0,0.1-0.1,0.1c-0.8,1.2-2,1.8-3.2,1.8  c-0.7,0-1.4-0.2-2-0.6c-10.2-6.3-23.3-7.7-38.8-4.1c-2.1,0.6-4-0.9-4.5-2.7c-0.6-2.3,0.9-4.1,2.7-4.6c17.7-4,32.6-2.3,44.4,5  c0.9,0.4,1.5,1,1.8,1.9C72.2,69.3,72.1,70.5,71.6,71.5z M76.9,59.3L76.9,59.3c-0.8,1.1-1.9,1.9-3.2,2.1c-0.2,0-0.5,0.1-0.7,0.1  c-0.8,0-1.6-0.3-2.3-0.7c-12-7.3-30.1-9.4-43.9-5c-2.5,0.6-5-0.7-5.6-3c-0.6-2.5,0.7-4.9,3-5.5c16.5-5,37.2-2.5,51.4,6.2  c0.8,0.4,1.5,1.3,1.8,2.5C77.9,57,77.6,58.3,76.9,59.3z M83.2,45.6c-1,1.4-2.7,2.1-4.4,2.1c-0.9,0-1.9-0.2-2.7-0.7c0,0,0,0,0,0  c-13.9-8.3-37.8-9.3-51.4-5.1c-2.7,0.8-5.5-0.7-6.4-3.3c-0.8-2.7,0.7-5.6,3.3-6.4c16.2-4.8,43-3.8,59.8,6.2  C83.8,39.6,84.7,42.9,83.2,45.6C83.3,45.5,83.3,45.5,83.2,45.6z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </a>
+          <div class="tooltip">Spotify</div>
+        </li>
+        <li class="icon-content">
+            <a
+                href="https://www.instagram.com/"
+                aria-label="Instagram"
+                data-social="instagram"
+            >
+                <div class="filled"></div>
+                <svg version="1.1" viewBox="0 0 100 100">
+                    <path
+                        d="M50,4c-13.9,0-16.6,0-22.4,0C20.4,4,16.4,4.1,14,4.3c-2.4,0.2-4.2,1-5.8,2.6c-1.5,1.5-2.4,3.4-2.6,5.8 C4.1,16.4,4,20.4,4,27.6c0,5.8,0,8.6,0,22.4s0,16.6,0,22.4c0,2.4,0.1,4.4,0.3,5.8c0.2,2.4,1,4.2,2.6,5.8 c1.5,1.5,3.4,2.4,5.8,2.6c2.4,0.2,4.4,0.3,22.4,0s16.6,0,22.4,0c5.8,0,8.6,0,22.4,0s16.6,0,22.4,0c2.4,0,4.4-0.1,5.8-0.3 c2.4-0.2,4.2-1,5.8-2.6c1.5-1.5,2.4-3.4,2.6-5.8c0.2-2.4,0.3-4.4,0.3-22.4s0-16.6,0-22.4s0-8.6,0-22.4s0-16.6,0-22.4 c0-2.4-0.1-4.4-0.3-5.8c-0.2-2.4-1-4.2-2.6-5.8c-1.5-1.5-3.4-2.4-5.8-2.6c-2.4-0.2-4.4-0.3-22.4-0C66.6,4,63.9,4,50,4z M50,26.5 c-10.1,0-18.3,8.2-18.3,18.3c0,10.1,8.2,18.3,18.3,18.3c10.1,0,18.3-8.2,18.3-18.3C68.3,34.7,60.1,26.5,50,26.5z M50,60.5 c-6.7,0-12.1-5.4-12.1-12.1c0-6.7,5.4-12.1,12.1-12.1c6.7,0,12.1,5.4,12.1,12.1C62.1,55.1,56.7,60.5,50,60.5z M75.2,22.7 c-1.4,0-2.5,1.1-2.5,2.5c0,1.4,1.1,2.5,2.5,2.5c1.4,0,2.5-1.1,2.5-2.5C77.7,23.8,76.6,22.7,75.2,22.7z"
+                        fill="currentColor"
+                    ></path>
+                </svg>
+            </a>
+            <div class="tooltip">Instagram</div>
+        </li>
+        
+        <li class="icon-content">
+            <a
+                href="https://www.facebook.com/"
+                aria-label="Facebook"
+                data-social="facebook"
+            >
+                <div class="filled"></div>
+                <svg version="1.1" viewBox="0 0 100 100">
+                    <path
+                        d="M50,4C24.6,4,4,24.6,4,50c0,23.2,17.1,42.2,39.3,45.7V61.5h-7.9v-11h7.9v-8.1c0-7.8,4.7-12,11.6-12 c3.3,0,6.1,0.2,6.9,0.3v8h-4.8c-3.7,0-4.4,1.8-4.4,4.3v5.6h8.8l-1.1,11h-7.7V95.7C82.9,92.2,100,73.2,100,50 C100,24.6,79.4,4,50,4z"
+                        fill="currentColor"
+                    ></path>
+                </svg>
+            </a>
+            <div class="tooltip">Facebook</div>
+        </li>
+        
+        <li class="icon-content">
+          <a
+            href="https://telegram.org/"
+            aria-label="Telegram"
+            data-social="telegram"
+          >
+            <div class="filled"></div>
+            <svg version="1.1" viewBox="0 0 100 100">
+              <path
+                d="M95,9.9c-1.3-1.1-3.4-1.2-7-0.1c0,0,0,0,0,0c-2.5,0.8-24.7,9.2-44.3,17.3c-17.6,7.3-31.9,13.7-33.6,14.5  c-1.9,0.6-6,2.4-6.2,5.2c-0.1,1.8,1.4,3.4,4.3,4.7c3.1,1.6,16.8,6.2,19.7,7.1c1,3.4,6.9,23.3,7.2,24.5c0.4,1.8,1.6,2.8,2.2,3.2  c0.1,0.1,0.3,0.3,0.5,0.4c0.3,0.2,0.7,0.3,1.2,0.3c0.7,0,1.5-0.3,2.2-0.8c3.7-3,10.1-9.7,11.9-11.6c7.9,6.2,16.5,13.1,17.3,13.9  c0,0,0.1,0.1,0.1,0.1c1.9,1.6,3.9,2.5,5.7,2.5c0.6,0,1.2-0.1,1.8-0.3c2.1-0.7,3.6-2.7,4.1-5.4c0-0.1,0.1-0.5,0.3-1.2  c3.4-14.8,6.1-27.8,8.3-38.7c2.1-10.7,3.8-21.2,4.8-26.8c0.2-1.4,0.4-2.5,0.5-3.2C96.3,13.5,96.5,11.2,95,9.9z M30,58.3l47.7-31.6  c0.1-0.1,0.3-0.2,0.4-0.3c0,0,0,0,0,0c0.1,0,0.1-0.1,0.2-0.1c0.1,0,0.1,0,0.2-0.1c-0.1,0.1-0.2,0.4-0.4,0.6L66,38.1  c-8.4,7.7-19.4,17.8-26.7,24.4c0,0,0,0,0,0.1c0,0-0.1,0.1-0.1,0.1c0,0,0,0.1-0.1,0.1c0,0.1,0,0.1-0.1,0.2c0,0,0,0.1,0,0.1  c0,0,0,0,0,0.1c-0.5,5.6-1.4,15.2-1.8,19.5c0,0,0,0,0-0.1C36.8,81.4,31.2,62.3,30,58.3z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </a>
+          <div class="tooltip">Telegram</div>
+        </li>
+      </ul>
+      
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const tabs = document.querySelectorAll('.tab-button');
+    const contents = document.querySelectorAll('.menu-content');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const target = tab.getAttribute('data-target');
+            showContent(target);
+        });
+    });
+
+    function showContent(target) {
+        contents.forEach(content => {
+            if (content.getAttribute('id') === target) {
+                content.style.display = 'flex';
+            } else {
+                content.style.display = 'none';
+            }
+        });
+
+        tabs.forEach(tab => {
+            if (tab.getAttribute('data-target') === target) {
+                tab.classList.add('active');
+            } else {
+                tab.classList.remove('active');
+            }
+        });
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Початкове заповнення меню для першої категорії
+    populateMenu("coffee");
+
+    // Додаємо обробник подій для кнопок категорій
+    const tabButtons = document.querySelectorAll(".tab-button");
+    tabButtons.forEach(button => {
+        button.addEventListener("click", function() {
+            const target = this.getAttribute("data-target");
+            document.querySelector(".tab-button.active").classList.remove("active");
+            this.classList.add("active");
+            document.querySelectorAll(".menu-content").forEach(content => {
+                content.style.display = "none";
+            });
+            document.getElementById(target).style.display = "block";
+            populateMenu(target);
+        });
+    });
+});
+window.addEventListener("DOMContentLoaded",() => {
+	const starRating = new StarRating("form");
+});
+
+class StarRating {
+	constructor(qs) {
+		this.ratings = [
+			{id: 1, name: "Дякую за ваш відгук, вибачте за зіпсований настрій "},
+			{id: 2, name: "Дякую за ваш відгук, ми обов'яково станемо краще "},
+			{id: 3, name: "Дякую за ваш відгук, сподівамось чи чудово провели час"},
+			{id: 4, name: "Дякую за ваш чудовий відгук"},
+			{id: 5, name: "Ви просто сонце"}
+		];
+		this.rating = null;
+		this.el = document.querySelector(qs);
+
+		this.init();
+	}
+	init() {
+		this.el?.addEventListener("change",this.updateRating.bind(this));
+
+		// stop Firefox from preserving form data between refreshes
+		try {
+			this.el?.reset();
+		} catch (err) {
+			console.error("Element isn’t a form.");
+		}
+	}
+	updateRating(e) {
+		// clear animation delays
+		Array.from(this.el.querySelectorAll(`[for*="rating"]`)).forEach(el => {
+			el.className = "rating__label";
+		});
+
+		const ratingObject = this.ratings.find(r => r.id === +e.target.value);
+		const prevRatingID = this.rating?.id || 0;
+
+		let delay = 0;
+		this.rating = ratingObject;
+		this.ratings.forEach(rating => {
+			const { id } = rating;
+
+			// add the delays
+			const ratingLabel = this.el.querySelector(`[for="rating-${id}"]`);
+
+			if (id > prevRatingID + 1 && id <= this.rating.id) {
+				++delay;
+				ratingLabel.classList.add(`rating__label--delay${delay}`);
+			}
+
+			// hide ratings to not read, show the one to read
+			const ratingTextEl = this.el.querySelector(`[data-rating="${id}"]`);
+
+			if (this.rating.id !== id)
+				ratingTextEl.setAttribute("hidden",true);
+			else
+				ratingTextEl.removeAttribute("hidden");
+		});
+	}
+}
+</script>
+</body>
+</html>
